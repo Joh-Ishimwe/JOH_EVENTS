@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: Joh-Ishimwe/joh-events
+  repo: Joh-Ishimwe/JOH_EVENTS
   branch: main
 
 # Where uploaded photos are saved, and the path the website uses to show them
