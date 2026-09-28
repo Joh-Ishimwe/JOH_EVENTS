@@ -1,0 +1,102 @@
+# =========================================================
+# JOH EVENTS admin configuration (Sveltia CMS)
+# Each "field" below becomes a box in the admin form.
+# =========================================================
+
+backend:
+  name: github
+  repo: Joh-Ishimwe/joh-events
+  branch: main
+
+# Where uploaded photos are saved, and the path the website uses to show them
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+site_url: https://johevents.rw
+display_url: https://johevents.rw
+
+collections:
+  - name: content
+    label: Website content
+    files:
+
+      # ---------- Testimonials ----------
+      - name: testimonials
+        label: Testimonials
+        file: content/testimonials.json
+        fields:
+          - name: items
+            label: Testimonials
+            label_singular: Testimonial
+            widget: list
+            summary: "{{name}} ({{event}})"
+            fields:
+              - { name: name, label: Client name, widget: string }
+              - { name: event, label: Event, widget: string, hint: "e.g. Wedding, Kigali" }
+              - { name: quote, label: What they said, widget: text }
+              - { name: photo, label: Photo (optional), widget: image, required: false }
+              - { name: show_on_home, label: Show on home page, widget: boolean, default: true }
+
+      # ---------- Portfolio projects ----------
+      - name: projects
+        label: Portfolio projects
+        file: content/projects.json
+        fields:
+          - name: items
+            label: Projects
+            label_singular: Project
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { name: title, label: Project title, widget: string }
+              - { name: slug, label: Web address name, widget: string, hint: "Lowercase with dashes, e.g. burgundy-wedding. Must be unique." }
+              - name: category
+                label: Filter category
+                widget: select
+                options:
+                  - { label: Real wedding, value: wedding }
+                  - { label: Styled project, value: styled }
+                  - { label: Event, value: event }
+              - { name: type_label, label: Label shown on page, widget: string, hint: "e.g. Styled wedding project" }
+              - { name: location, label: Location, widget: string }
+              - { name: featured, label: Feature on home page, widget: boolean, default: false, hint: "Only the first featured project is shown." }
+              - { name: services, label: Services provided, widget: string, required: false }
+              - { name: cover, label: Cover photo, widget: image, required: false }
+              - { name: summary, label: Short summary, widget: string, required: false }
+              - { name: vision, label: The vision, widget: text }
+              - { name: elements, label: Key elements, widget: list, required: false }
+              - { name: coordination, label: How we coordinated it, widget: text, required: false }
+              - { name: quote, label: Quote, widget: text, required: false }
+              - { name: gallery, label: Gallery photos, widget: list, required: false, field: { name: photo, label: Photo, widget: image } }
+
+      # ---------- Journal ----------
+      - name: posts
+        label: Journal articles
+        file: content/posts.json
+        fields:
+          - name: items
+            label: Articles
+            label_singular: Article
+            widget: list
+            summary: "{{title}} ({{date}})"
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: slug, label: Web address name, widget: string, hint: "Lowercase with dashes. Must be unique." }
+              - { name: date, label: Date, widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+              - { name: category, label: Category, widget: string }
+              - { name: cover, label: Cover photo, widget: image, required: false }
+              - { name: excerpt, label: Short description, widget: text }
+              - { name: body, label: Article, widget: markdown }
+
+      # ---------- Contact details ----------
+      - name: settings
+        label: Contact details & settings
+        file: content/settings.json
+        fields:
+          - { name: phone, label: Phone number, widget: string }
+          - { name: whatsapp, label: WhatsApp number, widget: string, hint: "Digits only, with country code, e.g. 250781234567" }
+          - { name: email, label: Email, widget: string }
+          - { name: instagram, label: Instagram link, widget: string }
+          - { name: tiktok, label: TikTok link, widget: string, required: false }
+          - { name: location, label: Location, widget: string }
+          - { name: form_endpoint, label: Contact form address (Formspree), widget: string }
