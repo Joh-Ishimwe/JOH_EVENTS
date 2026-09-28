@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "Sample: Amina & Eric",
+      "event": "Wedding, Kigali",
+      "quote": "Replace this with a real client's words. For example: from our first meeting JOH understood exactly what we wanted, and on the day we didn't have to think about a single detail.",
+      "photo": "",
+      "show_on_home": true
+    },
+    {
+      "name": "Sample: Grace M.",
+      "event": "Engagement dinner",
+      "quote": "Replace this with a real client's words. For example: everything ran on time, the table styling was beautiful, and our guests are still talking about it.",
+      "photo": "",
+      "show_on_home": true
+    },
+    {
+      "name": "Sample: David & Claudine",
+      "event": "Wedding-day coordination",
+      "quote": "Replace this with a real client's words. For example: we had planned it all ourselves, and JOH made sure the day actually happened the way we planned.",
+      "photo": "",
+      "show_on_home": true
+    }
+  ]
+}

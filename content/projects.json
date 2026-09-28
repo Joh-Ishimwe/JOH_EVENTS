@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "title": "The Burgundy Wedding",
+      "slug": "burgundy-wedding",
+      "category": "styled",
+      "type_label": "Styled wedding project",
+      "location": "Kigali",
+      "featured": true,
+      "services": "Concept · Planning · Coordination · Design",
+      "cover": "",
+      "summary": "A romantic celebration in burgundy, ivory and gold.",
+      "vision": "A romantic and elegant celebration inspired by rich burgundy tones, natural textures and timeless details. The goal was an intimate atmosphere that felt both modern and classic.",
+      "elements": ["Classic colour palette: burgundy, ivory and gold", "Floral installations", "Elegant table settings", "Outdoor ceremony set-up", "Thoughtful guest experience"],
+      "coordination": "We managed the florist, rentals, caterer and photographer on one shared timeline, with a full walkthrough the day before.",
+      "quote": "This project was a chance to bring creativity, planning and coordination together, and to show how the right details can turn a space into a meaningful celebration.",
+      "gallery": ["", "", ""]
+    },
+    {
+      "title": "Modern Elegance", "slug": "modern-elegance", "category": "styled",
+      "type_label": "Styled wedding project", "location": "Kigali", "featured": false,
+      "services": "Concept · Design", "cover": "", "summary": "Clean lines and soft florals.",
+      "vision": "Add the story of this project in the admin.", "elements": [], "coordination": "", "quote": "", "gallery": []
+    },
+    {
+      "title": "Intimate Dinner", "slug": "intimate-dinner", "category": "event",
+      "type_label": "Event", "location": "Kigali", "featured": false,
+      "services": "Planning · Styling", "cover": "", "summary": "A candlelit dinner for close family.",
+      "vision": "Add the story of this project in the admin.", "elements": [], "coordination": "", "quote": "", "gallery": []
+    },
+    {
+      "title": "Corporate Launch", "slug": "corporate-launch", "category": "event",
+      "type_label": "Event", "location": "Kigali", "featured": false,
+      "services": "Coordination", "cover": "", "summary": "A product launch evening.",
+      "vision": "Add the story of this project in the admin.", "elements": [], "coordination": "", "quote": "", "gallery": []
+    }
+  ]
+}

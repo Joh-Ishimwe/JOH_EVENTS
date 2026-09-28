@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "title": "How to build a wedding timeline that works",
+      "slug": "wedding-timeline",
+      "date": "2026-09-01",
+      "category": "Planning",
+      "cover": "",
+      "excerpt": "A step-by-step look at how we plan the day hour by hour, and where most timelines go wrong.",
+      "body": "Write the full article in the admin.\n\n## Start from the ceremony time\n\nWork backwards from the moment that can't move."
+    },
+    {
+      "title": "Questions to ask every vendor before you book",
+      "slug": "vendor-questions",
+      "date": "2026-08-15",
+      "category": "Vendors",
+      "cover": "",
+      "excerpt": "What to check with your florist, caterer and photographer so there are no surprises.",
+      "body": "Write the full article in the admin."
+    },
+    {
+      "title": "Setting a realistic budget for a Kigali wedding",
+      "slug": "kigali-wedding-budget",
+      "date": "2026-08-01",
+      "category": "Budget",
+      "cover": "",
+      "excerpt": "How to split your budget across the things that matter most to you.",
+      "body": "Write the full article in the admin."
+    }
+  ]
+}
