@@ -244,6 +244,38 @@ function validate(form) {
   return ok;
 }
 
+/* ---------- Confirmation modal (shown after a successful form send) ---------- */
+function ensureConfirmModal() {
+  let modal = document.getElementById("confirm-modal");
+  if (modal) return modal;
+  modal = document.createElement("div");
+  modal.id = "confirm-modal";
+  modal.className = "modal-overlay";
+  modal.hidden = true;
+  modal.innerHTML = `
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+      <button type="button" class="modal__close" aria-label="Close">&times;</button>
+      <svg class="modal__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>
+      <h3 id="confirm-modal-title">Message sent</h3>
+      <p class="modal__text"></p>
+      <button type="button" class="btn modal__ok">Done</button>
+    </div>`;
+  document.body.appendChild(modal);
+  const close = () => { modal.hidden = true; };
+  modal.querySelector(".modal__close").addEventListener("click", close);
+  modal.querySelector(".modal__ok").addEventListener("click", close);
+  modal.addEventListener("click", (e) => { if (e.target === modal) close(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) close(); });
+  return modal;
+}
+
+function showConfirmationModal(message) {
+  const modal = ensureConfirmModal();
+  modal.querySelector(".modal__text").textContent = message;
+  modal.hidden = false;
+  modal.querySelector(".modal__close").focus();
+}
+
 function initContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -278,6 +310,7 @@ function initContactForm() {
       });
       form.reset();
       show("success", "Message sent. We'll reply within two working days.");
+      showConfirmationModal("Thank you! Your message has been sent. We'll reply within two working days.");
       log("info", "form_sent");
     } catch (err) {
       const msg = err instanceof PermanentError
