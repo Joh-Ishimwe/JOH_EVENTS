@@ -5,7 +5,9 @@
   <url><loc>https://johevents.rw/service-full-planning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://johevents.rw/portfolio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://johevents.rw/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Journal hidden for now, re-enable when articles are ready
   <url><loc>https://johevents.rw/blog.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  -->
   <url><loc>https://johevents.rw/contact.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
   <url><loc>https://johevents.rw/project.html?slug=burgundy-wedding</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -13,7 +15,9 @@
   <url><loc>https://johevents.rw/project.html?slug=intimate-dinner</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://johevents.rw/project.html?slug=corporate-launch</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <!-- Journal hidden for now, re-enable when articles are ready
   <url><loc>https://johevents.rw/post.html?slug=wedding-timeline</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://johevents.rw/post.html?slug=vendor-questions</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://johevents.rw/post.html?slug=kigali-wedding-budget</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  -->
 </urlset>

@@ -26,7 +26,7 @@ const NAV = [
   { href: "services.html", label: "Services", key: "services" },
   { href: "portfolio.html", label: "Portfolio", key: "portfolio" },
   { href: "about.html", label: "About", key: "about" },
-  { href: "blog.html", label: "Journal", key: "blog" },
+  // { href: "blog.html", label: "Journal", key: "blog" }, // hidden for now, re-enable when articles are ready
   { href: "contact.html", label: "Contact", key: "contact" },
 ];
 
