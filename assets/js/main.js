@@ -55,7 +55,7 @@ function renderHeader() {
     <div class="container">
       <div class="brand">
         <a href="index.html" class="logo" aria-label="JOH Events home">
-          <img src="assets/images/logo-horizontal.png" alt="JOH Events">
+          <img src="assets/images/logo-primary.png" alt="JOH Events">
         </a>
         <span class="brand__tag">Weddings · Events · Coordination</span>
       </div>
@@ -80,7 +80,7 @@ function renderFooter() {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="assets/images/logo-horizontal.png" alt="JOH Events"></a>
+          <a href="index.html" class="logo"><img src="assets/images/logo-primary.png" alt="JOH Events"></a>
           <small>Weddings · Events · Coordination</small>
         </div>
         <div class="footer-col"><h4>Explore</h4><ul>${links}</ul></div>
